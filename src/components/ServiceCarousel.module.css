@@ -1,0 +1,66 @@
+/* ServiceCarousel.module.css */
+
+.carouselContainer {
+  width: 90vw;
+  margin: auto;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.serviceIcon {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.customCarouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #f0e6f4; /* Light purple background */
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2; /* Ensure the buttons are above the carousel */
+}
+
+.customCarouselButton:hover {
+  background-color: #d4a3db; /* Darker purple on hover */
+}
+
+.customCarouselButton svg {
+  fill: #6a0dad; /* Purple arrow icon color */
+  width: 20px;
+  height: 20px;
+}
+
+.prevButton {
+  left: 10px; /* Position the left button */
+}
+
+.nextButton {
+  right: 10px; /* Position the right button */
+}

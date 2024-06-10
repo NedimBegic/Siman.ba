@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.image {
+  width: 90%;
+  max-width: 30em;
+  border-radius: 10px;
+}
+
+.textContainer {
+  max-width: 35em;
+  padding: 1em;
+}
+
+.cvButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cvButton:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+
+  .textContainer p {
+    padding: 1em;
+    margin-top: -1em;
+  }
+
+  .cvButton {
+    margin-left: 1em;
+    margin-top: -1em;
+  }
+}
