@@ -1,8 +1,27 @@
-/* ServiceCarousel.module.css */
-
 .carouselContainer {
   width: 90vw;
   margin: auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  padding: 0;
+  text-align: center;
+}
+
+.carouselContainer h2 {
+  font-family: var(--font-family-primary);
+  margin-bottom: 0.2em;
+  letter-spacing: 2px;
+  color: var(--color-secondary);
+}
+
+.car {
+  margin-top: 1em;
+}
+
+.carouselContainer span {
+  font-family: var(--font-family-secondary);
+  color: var(--color-accent);
+  letter-spacing: 1px;
 }
 
 .serviceItem {
@@ -24,10 +43,12 @@
 h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-family: var(--font-family-primary);
 }
 
 p {
   font-size: 1rem;
+  font-family: var(--font-family-secondary);
 }
 
 .customCarouselButton {
@@ -36,31 +57,44 @@ p {
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-color: #f0e6f4; /* Light purple background */
+  background-color: var(--color-primary); /* Darker purple on hover */
   border: none;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  color: var(--color-accent);
   z-index: 2; /* Ensure the buttons are above the carousel */
+  opacity: 0.8;
 }
 
 .customCarouselButton:hover {
-  background-color: #d4a3db; /* Darker purple on hover */
+  background-color: var(--color-primary);
+  font-size: 1.3em;
+  opacity: 1;
 }
 
-.customCarouselButton svg {
-  fill: #6a0dad; /* Purple arrow icon color */
-  width: 20px;
-  height: 20px;
+.customCarouselButton:focus {
+  border: none;
+  outline: none;
 }
 
 .prevButton {
-  left: 10px; /* Position the left button */
+  border-radius: 10px;
+  left: -10px;
 }
 
 .nextButton {
-  right: 10px; /* Position the right button */
+  right: -10px; /* Position the right button */
+  border-radius: 10px;
+  position: absolute;
+  z-index: 9999999;
+}
+
+.serviceGroup {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
 }

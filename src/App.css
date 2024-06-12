@@ -7,3 +7,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+:root {
+  /* Font families */
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-secondary: "Lora", serif;
+
+  /* Colors */
+  --color-primary: #fefefa;
+  --color-secondary: #1b1b1b;
+  --color-accent: #852d7b;
+}

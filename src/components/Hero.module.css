@@ -1,15 +1,45 @@
 .hero {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/src/assets/heroLarge.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("/src/assets/background.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   color: white;
+  border-bottom: 50px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 200px),
+    50% 100%,
+    0 calc(100% - 200px)
+  );
+  overflow: hidden;
+}
+
+.siman {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 1em;
+  padding: 0em 1em;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.siman img {
+  width: 2em;
+}
+
+.siman h3 {
+  font-family: var(--font-family-primary);
+  letter-spacing: 3px;
+  font-weight: 300;
 }
 
 .header {
@@ -19,23 +49,28 @@
   padding: 20px;
 }
 
-.logo {
-  width: 100px;
-}
-
 .navbar {
-  margin-right: 3em;
+  position: absolute;
+  right: 4em;
+  font-family: var(--font-family-primary);
+  margin-top: 1em;
+  display: flex;
+  width: auto;
 }
 
 .navbar a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  transition: transform 100ms ease-in;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
+  color: var(--color-primary);
 }
 
 .mobileMenuButton {
@@ -111,26 +146,50 @@
   justify-content: center;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .centerImage {
-  width: 200px; /* Adjust the size of the center image as needed */
-  height: 200px;
+  width: 10em;
+  height: 10em;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
+  transform: rotate(19deg);
 }
 
 h1 {
   margin: 10px 0;
   font-size: 2.5em;
+  color: var(--color-primary);
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  letter-spacing: 6px;
+  margin-bottom: 0;
 }
 
-p {
+.content p {
   font-size: 1.5em;
+  font-family: var(--font-family-secondary);
+  color: var(--color-primary);
+  letter-spacing: 5px;
+}
+
+.content button {
+  font-family: var(--font-family-primary);
+  background-color: var(--color-accent);
+  margin-top: 2em;
+  font-weight: 400;
+  color: var(--color-primary);
+  letter-spacing: 2.5px;
+  transition: transform 300ms ease-in;
+}
+
+.content button:hover {
+  transform: scale(1.1);
+  border: none;
 }
 
 @media (max-width: 900px) {

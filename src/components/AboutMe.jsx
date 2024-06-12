@@ -1,17 +1,18 @@
 import React from "react";
 import styles from "./AboutMe.module.css";
+import about from "../assets/about.jpg";
 
 const AboutMe = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img
-          src="/src/assets/proba.jpg"
-          alt="About me"
-          className={styles.image}
-        />
+        <img src={about} alt="About me" className={styles.image} />
       </div>
       <div className={styles.textContainer}>
+        <div>
+          <h2 className={styles.o}>O &nbsp;</h2>
+          <h2>meni</h2>
+        </div>
         <p>
           Zdravo! Moje ime je [Vaše Ime] i profesionalni sam lektor s
           višegodišnjim iskustvom u ispravljanju i uređivanju različitih

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Hero.module.css";
+import logo from "../assets/logo.png";
+import hero from "../assets/hero.jpg";
 
 const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,14 +12,17 @@ const Hero = () => {
 
   return (
     <div className={styles.hero}>
+      <div className={styles.siman}>
+        <img src={logo} alt="Logo" className={styles.logo} />
+        <h3>SIMAN</h3>
+      </div>
       <div className={styles.header}>
-        <img src={""} alt="Logo" className={styles.logo} />
         <nav className={styles.navbar}>
-          <a href="#about-me">About Me</a>
-          <a href="#service">Service</a>
-          <a href="#my-work">My Work</a>
+          <a href="#about-me">O meni</a>
+          <a href="#service">Usluge</a>
+          <a href="#my-work">Iskustvo</a>
           <a href="#reference">Reference</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Kontakt</a>
         </nav>
       </div>
       <div
@@ -33,26 +38,27 @@ const Hero = () => {
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
           <a href="#about-me" onClick={toggleMenu}>
-            About Me
+            O meni
           </a>
           <a href="#service" onClick={toggleMenu}>
-            Service
+            Usluge
           </a>
           <a href="#my-work" onClick={toggleMenu}>
-            My Work
+            Iskustvo
           </a>
           <a href="#reference" onClick={toggleMenu}>
             Reference
           </a>
           <a href="#contact" onClick={toggleMenu}>
-            Contact
+            Kontakt
           </a>
         </div>
       )}
       <div className={styles.content}>
-        <img src={""} alt="Center" className={styles.centerImage} />
-        <h1>Your Name</h1>
-        <p>Your slogan goes here</p>
+        <img src={hero} alt="Center" className={styles.centerImage} />
+        <h1>SELMA DEMIROVIĆ</h1>
+        <p>Preciznost u detaljima</p>
+        <button>KONTAKT</button>
       </div>
     </div>
   );
