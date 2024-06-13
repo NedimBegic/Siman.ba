@@ -1,0 +1,4 @@
+.referenceComponent {
+  border: 1px solid var(--color-accent);
+  width: 20em;
+}

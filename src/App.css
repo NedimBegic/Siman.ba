@@ -18,3 +18,7 @@ body {
   --color-secondary: #1b1b1b;
   --color-accent: #852d7b;
 }
+
+body p {
+  color: var(--color-secondary);
+}

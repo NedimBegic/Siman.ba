@@ -12,7 +12,7 @@
   margin: 0 10px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 300ms ease;
+  transition: all 300ms ease-in;
 }
 
 .buttons button:hover {
@@ -43,7 +43,7 @@
 
 .left,
 .right {
-  transition: opacity 0.3s ease;
+  transition: opacity 300ms ease;
 }
 
 @media (max-width: 766px) {
