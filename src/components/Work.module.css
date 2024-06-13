@@ -1,0 +1,53 @@
+/* Work.module.css */
+
+.workSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+
+.buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+
+.buttons button:hover {
+  border: 1px solid var(--color-accent);
+}
+
+.buttons button:active {
+  border: 1px solid var(--color-accent);
+}
+
+.buttons .active {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.inactive > * {
+  color: gray !important;
+}
+
+.work {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.left,
+.right {
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 766px) {
+  .inactive {
+    display: none;
+  }
+}

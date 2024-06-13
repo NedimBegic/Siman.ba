@@ -68,13 +68,28 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1137px) {
   .container {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    height: auto;
   }
 
+  .imageContainer {
+    border: none;
+    width: auto;
+    height: auto;
+  }
+
+  .image {
+    position: initial;
+    width: 100%;
+    transform: translate(0px, 0px);
+  }
+}
+
+@media (max-width: 768px) {
   .textContainer {
     width: 100%;
   }

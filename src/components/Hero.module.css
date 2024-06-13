@@ -3,7 +3,7 @@
   height: 100vh;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
-      rgba(255, 255, 255, 0.3)
+      rgba(255, 255, 255, 0.1)
     ),
     url("/src/assets/background.jpg");
   background-size: cover;
@@ -33,7 +33,7 @@
 }
 
 .siman img {
-  width: 2em;
+  width: 3em;
 }
 
 .siman h3 {
@@ -209,8 +209,20 @@ h1 {
   }
 
   .hero {
-    background-image: url("/src/assets/writingSmall.jpg");
+    background-image: url("/src/assets/background.jpg");
     width: 100vw;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("/src/assets/background.jpg");
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 100px),
+      50% 100%,
+      0 calc(100% - 100px)
+    );
   }
 
   .mobileMenuButton {
@@ -226,5 +238,11 @@ h1 {
     transition: transform 0.3s ease, opacity 0.3s ease;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 362px) {
+  .hero {
+    width: 100%;
   }
 }

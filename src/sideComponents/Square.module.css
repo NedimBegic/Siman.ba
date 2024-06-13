@@ -1,0 +1,40 @@
+.square {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 9.7em;
+  gap: 0;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.square * {
+  transition: color 500ms ease; /* Transition color changes over 0.3 seconds with ease */
+}
+
+.gray * {
+  color: gray !important;
+  opacity: 0.6;
+}
+
+.square p {
+  color: var(--color-secondary);
+  margin: 0;
+  letter-spacing: 1px;
+  font-family: var(--font-family-secondry);
+}
+
+.square h4 {
+  font-family: var(--font-family-primary);
+  margin: 0;
+  letter-spacing: 1px;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 766px) {
+  .square {
+    height: 12.7em;
+  }
+}

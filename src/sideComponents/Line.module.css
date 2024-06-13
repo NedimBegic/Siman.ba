@@ -1,0 +1,11 @@
+.line {
+  width: 1px;
+  height: 9em;
+  background-color: var(--color-accent);
+}
+
+@media (max-width: 766px) {
+  .line {
+    height: 12em;
+  }
+}
