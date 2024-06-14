@@ -47,7 +47,7 @@
 }
 
 .textContainer p {
-  color: var(--color-secondary);
+  color: var(--color-secondary) !important;
   line-height: 1.6em;
 }
 

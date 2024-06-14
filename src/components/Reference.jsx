@@ -3,9 +3,11 @@ import ReferenceComponent from "../sideComponents/ReferenceComponent";
 const Reference = () => {
   return (
     <div>
-      <ReferenceComponent />
-      <ReferenceComponent />
-      <ReferenceComponent />
+      <div className={style.ref}>
+        <ReferenceComponent />
+        <ReferenceComponent />
+        <ReferenceComponent />
+      </div>
     </div>
   );
 };

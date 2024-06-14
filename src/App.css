@@ -21,4 +21,5 @@ body {
 
 body p {
   color: var(--color-secondary);
+  font-family: var(--font-family-secondary);
 }
