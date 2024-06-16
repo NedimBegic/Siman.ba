@@ -1,6 +1,19 @@
+.refDiv {
+  text-align: center;
+}
+
+.refDiv h3 {
+  font-family: var(--font-family-primary);
+  letter-spacing: 1px;
+}
+
+.refDiv span {
+  font-family: var(--font-family-secondary);
+  color: var(--color-accent);
+}
+
 .ref {
   width: 100%;
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -8,6 +8,17 @@
   margin-top: 10em;
 }
 
+.workSection h3 {
+  font-family: var(--font-primary);
+  letter-spacing: 1px;
+}
+
+.workSection span {
+  color: var(--color-accent);
+  font-family: var(--font-secondary);
+  margin-bottom: 2em;
+}
+
 .buttons button {
   margin: 0 10px;
   padding: 10px 20px;

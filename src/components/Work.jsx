@@ -33,6 +33,7 @@ const Work = () => {
   return (
     <div className={style.workSection}>
       <h3>Iskustvo</h3>
+      <span>Stručnost stečena kroz godine rada</span>
       <div className={style.buttons}>
         <button
           onClick={toggleIskustvo}
