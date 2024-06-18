@@ -20,6 +20,10 @@ body {
   --color-accent: #852d7b;
 }
 
+body h2 {
+  color: var(--color-secondary);
+}
+
 body p {
   color: var(--color-secondary);
   font-family: var(--font-family-secondary);
