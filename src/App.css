@@ -28,3 +28,12 @@ body p {
   color: var(--color-secondary);
   font-family: var(--font-family-secondary);
 }
+
+body span {
+  color: var(--color-secondary);
+}
+
+body input,
+body textarea {
+  background-color: var(--color-primary);
+}
