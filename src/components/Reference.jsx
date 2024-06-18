@@ -5,7 +5,7 @@ import ks from "../assets/ks.png";
 const Reference = () => {
   return (
     <div className={style.refDiv}>
-      <h3>Reference</h3>
+      <h2>Reference</h2>
       <span>Iskustva zadovoljnih klijenata i saradnika</span>
       <div className={style.ref}>
         <ReferenceComponent
