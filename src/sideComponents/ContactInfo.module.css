@@ -33,9 +33,10 @@
 }
 
 .infoItem span {
-  font-family: var(--font-family-primary) !important;
+  font-family: var(--font-family-secondary) !important;
   letter-spacing: 1px;
   font-size: 0.7em;
+  color: var(--color-primary);
 }
 
 .transparentBackground {
