@@ -1,0 +1,12 @@
+.map {
+  width: 50%;
+  height: 25em;
+  border-radius: 10px;
+  border: 1px solid var(--color-accent);
+}
+
+@media (max-width: 836px) {
+  .map {
+    width: 90%;
+  }
+}

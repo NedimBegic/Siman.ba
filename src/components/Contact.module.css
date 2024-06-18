@@ -1,0 +1,85 @@
+.contact {
+  text-align: center;
+  margin-top: 5em;
+  background-image: url("/src/assets/contact.jpg");
+  background-size: 100%;
+  background-position: 50% 54%;
+  background-repeat: no-repeat;
+  margin-top: 10em;
+}
+
+.contact h2 {
+  font-family: var(--font-family-primary);
+  letter-spacing: 1px;
+}
+
+.contact span {
+  font-family: var(--font-family-secondary);
+  letter-spacing: 1px;
+  color: var(--color-accent);
+}
+
+.contact form {
+  width: 90%;
+  max-width: 40em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.contact form > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.4em;
+}
+
+.contact form div input,
+.contact form div textarea {
+  width: 100%;
+  height: 2em;
+  margin-bottom: 1em;
+  border: 1px solid var(--color-accent);
+  padding: 0.4em;
+  border-radius: 5px;
+  font-family: var(--font-family-secondary);
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.contact form div textarea {
+  height: 10em;
+}
+
+.contact form div label {
+  font-family: var(--font-family-secondary);
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.contact form button {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-family: var(--font-family-primary);
+  transition: transform 300ms ease-in;
+  letter-spacing: 1px;
+}
+
+.contact form button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .contact {
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact {
+    background-size: 200%;
+  }
+}

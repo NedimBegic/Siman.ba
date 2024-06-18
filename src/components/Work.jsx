@@ -32,7 +32,7 @@ const Work = () => {
 
   return (
     <div className={style.workSection}>
-      <h3>Iskustvo</h3>
+      <h2>Iskustvo</h2>
       <span>Stručnost stečena kroz godine rada</span>
       <div className={style.buttons}>
         <button

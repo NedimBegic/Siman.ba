@@ -8,12 +8,12 @@
   margin-top: 10em;
 }
 
-.workSection h3 {
+.workSection h2 {
   font-family: var(--font-primary);
   letter-spacing: 1px;
 }
 
-.workSection span {
+.workSection > span {
   color: var(--color-accent);
   font-family: var(--font-secondary);
   margin-bottom: 2em;

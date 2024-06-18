@@ -1,14 +1,15 @@
 .referenceComponent {
   position: relative;
-  width: 30em;
-  padding: 0.4em;
-  padding-top: 0;
+  width: 90%;
+  max-width: 30em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background: white; /* Background color of the inner content */
   border-radius: 80px; /* Border radius for the inner content */
   z-index: 0;
+  height: auto;
 }
 
 .referenceComponent::before {
@@ -19,7 +20,7 @@
   right: 0;
   bottom: 0;
   border-radius: 10px; /* Border radius for the gradient border */
-  padding: 3px; /* Border width */
+  padding: 2px; /* Border width */
   background: linear-gradient(
     90deg,
     rgba(133, 45, 123, 0),
@@ -31,6 +32,10 @@
   z-index: -1;
 }
 
+.rating {
+  font-size: 1.4em !important;
+}
+
 .referenceComponent > div {
   display: flex;
   align-items: center;
@@ -40,9 +45,72 @@
 
 .referenceComponent > div h4 {
   font-family: var(--font-family-primary);
+  color: var(--color-secondary);
 }
 
 .referenceComponent > p {
   color: var(--color-secondary) !important;
   letter-spacing: 1px;
+  font-family: var(--font-family-secondary) !important;
+}
+
+.referenceComponent img {
+  width: 2em;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+}
+
+.referenceComponent span {
+  font-family: var(--font-family-secondary);
+  color: var(--color-accent);
+}
+
+@media (max-width: 516px) {
+  .rating {
+    font-size: 1.1em !important;
+    left: 20em !important;
+  }
+}
+
+@media (max-width: 488px) {
+  .rating {
+    font-size: 0.9em !important;
+    left: 23em !important;
+  }
+}
+
+@media (max-width: 439px) {
+  .rating {
+    left: 22em !important;
+  }
+
+  .referenceComponent * {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 403px) {
+  .rating {
+    left: 19em !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .rating {
+    left: 18em !important;
+  }
+}
+
+@media (max-width: 344px) {
+  .rating {
+    position: relative;
+    left: 17em !important;
+  }
+}
+
+@media (max-width: 324px) {
+  .rating {
+    position: relative;
+    left: 16em !important;
+  }
 }

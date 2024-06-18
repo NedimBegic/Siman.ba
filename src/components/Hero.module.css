@@ -241,8 +241,32 @@ h1 {
   }
 }
 
-@media (max-width: 362px) {
+@media (max-width: 555px) {
+  .hero {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 50px),
+      50% 100%,
+      0 calc(100% - 50px)
+    );
+  }
+}
+
+@media (max-width: 364px) {
   .hero {
     width: 100%;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 334px) {
+  .hero {
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  .content button {
+    font-size: 1.5em !important;
   }
 }
