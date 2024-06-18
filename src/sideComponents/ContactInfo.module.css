@@ -33,7 +33,7 @@
 }
 
 .infoItem span {
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-primary) !important;
   letter-spacing: 1px;
   font-size: 0.7em;
 }
