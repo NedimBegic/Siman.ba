@@ -20,6 +20,10 @@ body {
   --color-accent: #852d7b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body h2 {
   color: var(--color-secondary);
 }

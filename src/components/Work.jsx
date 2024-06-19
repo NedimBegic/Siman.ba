@@ -31,7 +31,7 @@ const Work = () => {
   };
 
   return (
-    <div className={style.workSection}>
+    <div id="my-work" className={style.workSection}>
       <h2>Iskustvo</h2>
       <span>Stručnost stečena kroz godine rada</span>
       <div className={style.buttons}>

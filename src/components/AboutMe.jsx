@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./AboutMe.module.css";
 import about from "../assets/about.jpg";
+import cv from "../assets/cv.pdf";
 
 const AboutMe = () => {
   return (
-    <div className={styles.container}>
+    <div id="about-me" className={styles.container}>
       <div className={styles.imageContainer}>
         <img src={about} alt="About me" className={styles.image} />
       </div>
@@ -14,7 +15,7 @@ const AboutMe = () => {
           <h2>meni</h2>
         </div>
         <p>
-          Zdravo! Moje ime je [Vaše Ime] i profesionalni sam lektor s
+          Zdravo! Moje ime je Selma Demirović i profesionalni sam lektor s
           višegodišnjim iskustvom u ispravljanju i uređivanju različitih
           tekstova. Bilo da se radi o akademskim radovima, poslovnim dokumentima
           ili književnim djelima, posvećen sam pružanju usluga lektorisanja koje
@@ -25,7 +26,10 @@ const AboutMe = () => {
           Kontaktirajte me za vrhunsku uslugu lektorisanja koja će vaše tekstove
           podići na viši nivo!
         </p>
-        <button className={styles.cvButton}>Skini CV</button>
+
+        <a href={cv} target="_blank" rel="noopener noreferrer">
+          <button className={styles.cvButton}>Skini CV</button>
+        </a>
       </div>
     </div>
   );

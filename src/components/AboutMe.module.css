@@ -54,18 +54,19 @@
 .cvButton {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #007bff;
   color: white;
   border: none;
+  font-family: var(--font-family-primary);
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   background-color: var(--color-accent);
   transition: all 300ms ease-in;
+  letter-spacing: 2px;
 }
 
 .cvButton:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
 }
 
 @media (max-width: 1137px) {
@@ -95,12 +96,11 @@
   }
 
   .textContainer p {
-    padding: 1em;
     margin-top: -1em;
+    padding: 1em 0em;
   }
 
   .cvButton {
-    margin-left: 1em;
     margin-top: -1em;
   }
 }

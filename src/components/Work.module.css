@@ -11,6 +11,7 @@
 .workSection h2 {
   font-family: var(--font-primary);
   letter-spacing: 1px;
+  margin-bottom: 0.2em;
 }
 
 .workSection > span {
@@ -24,6 +25,9 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: all 300ms ease-in;
+  background-color: white;
+  font-family: var(--font-primary);
+  letter-spacing: 1px;
 }
 
 .buttons button:hover {

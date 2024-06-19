@@ -21,7 +21,7 @@ const ServiceCarousel = () => {
   const groupedServices = groupServices(services);
 
   return (
-    <div className={styles.carouselContainer}>
+    <div id="service" className={styles.carouselContainer}>
       <h2>Usluge</h2>
       <span>Osigurajte tačnost i jasnoću vaših tekstova</span>
       <Carousel

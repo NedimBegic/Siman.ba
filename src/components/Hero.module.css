@@ -119,19 +119,35 @@
 .mobileMenu {
   display: none;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  background-color: var(--color-primary);
   position: absolute;
+  z-index: 2;
   top: 60px;
-  right: 20px;
-  padding: 10px;
+  width: 100vw;
+  right: 0px;
   border-radius: 8px;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: slideIn 0.3s ease forwards;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .mobileMenu a {
-  color: white;
+  color: var(--color-secondary);
   margin: 10px 0;
   font-size: 1.2em;
+  font-family: var(--font-family-secondary);
+  letter-spacing: 3px;
   text-decoration: none;
 }
 
@@ -157,7 +173,6 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1em;
-  transform: rotate(19deg);
 }
 
 h1 {
@@ -195,6 +210,10 @@ h1 {
 @media (max-width: 900px) {
   .header {
     display: none;
+  }
+
+  .siman {
+    margin-left: 0.4em;
   }
   .mobileMenuButton {
     display: flex;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Hero.module.css";
 import logo from "../assets/logo.png";
-import hero from "../assets/hero.jpg";
+import hero from "../assets/hero.jfif";
 
 const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,9 +56,11 @@ const Hero = () => {
       )}
       <div className={styles.content}>
         <img src={hero} alt="Center" className={styles.centerImage} />
-        <h1>SELMA DEMIROVIĆ</h1>
-        <p>Preciznost u detaljima</p>
-        <button>KONTAKT</button>
+        <h1>SIMAN</h1>
+        <p>Selma Demirović</p>
+        <a href="#contact">
+          <button>KONTAKT</button>
+        </a>
       </div>
     </div>
   );

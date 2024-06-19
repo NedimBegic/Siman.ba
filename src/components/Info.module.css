@@ -5,6 +5,7 @@
 
 .info h2 {
   font-family: var(--font-family-primary);
+  margin-bottom: 0.2em;
 }
 
 .info > div {
@@ -17,6 +18,8 @@
 
 .info > span {
   color: var(--color-accent);
+  letter-spacing: 1px;
+  font-family: var(--font-family-secondary);
 }
 
 .info div aside {

@@ -4,7 +4,7 @@ import oslo from "../assets/oslo.png";
 import ks from "../assets/ks.png";
 const Reference = () => {
   return (
-    <div className={style.refDiv}>
+    <div id="reference" className={style.refDiv}>
       <h2>Reference</h2>
       <span>Iskustva zadovoljnih klijenata i saradnika</span>
       <div className={style.ref}>

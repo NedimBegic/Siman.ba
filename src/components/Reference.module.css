@@ -6,6 +6,7 @@
 .refDiv h2 {
   font-family: var(--font-family-primary);
   letter-spacing: 1px;
+  margin-bottom: 0.2em;
 }
 
 .refDiv > span {
