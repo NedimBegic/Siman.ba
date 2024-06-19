@@ -28,6 +28,7 @@
   background-color: white;
   font-family: var(--font-primary);
   letter-spacing: 1px;
+  color: var(--color-secondary);
 }
 
 .buttons button:hover {
@@ -64,5 +65,9 @@
 @media (max-width: 766px) {
   .inactive {
     display: none;
+  }
+
+  .buttons button {
+    border: 1px solid var(--color-accent);
   }
 }
