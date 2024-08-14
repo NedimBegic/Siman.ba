@@ -68,12 +68,12 @@ const Work = () => {
           }`}
         >
           <Square
-            item={experience[0]}
+            item={experience[1]}
             left={false}
             active={isEdukacijaActive}
           />
           <Square
-            item={experience[1]}
+            item={experience[0]}
             left={false}
             active={isEdukacijaActive}
           />
